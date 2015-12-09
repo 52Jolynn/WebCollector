@@ -197,7 +197,7 @@ public class ContentExtractor {
 	}
 
 	protected String getTime(Element contentElement) throws Exception {
-		String regex = "([1-9](?:[0-9]{3}|[0-9]))[-/年](1[0-2]|0?[1-9])[-/月]([12][1-9]|3[01]|0?[1-9])日?[\\s|&nbsp;]*(?:(1[0-9]|2[0-3]|0?[0-9])[:时]([1-5][0-9]|0?[0-9])[:分]?(?:([1-5][0-9]|0?[0-9])秒?)?(?:\\.[0-9]{3})?)?";
+		String regex = "([1-9](?:[0-9]{3}|[0-9]))[-/年](1[0-2]|0?[1-9])[-/月]([12][0-9]|3[01]|0?[1-9])日?[\\s|&nbsp;]*(?:(1[0-9]|2[0-3]|0?[0-9])[:时]([1-5][0-9]|0?[0-9])[:分]?(?:([1-5][0-9]|0?[0-9])秒?)?(?:\\.[0-9]{3})?)?";
 		Pattern pattern = Pattern.compile(regex);
 		Element current = contentElement;
 		for (int i = 0; i < 2; i++) {
